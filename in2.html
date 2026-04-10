@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Company Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Milestone Project</title>
+</head>
+<body>
+    <style>
+        /* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #004080;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header nav a {
+  color: #ffdd00;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #004080;
+  margin-top: 0;
+}
+
+/* Video */
+.video video {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid #004080;
+  border-radius: 8px;
+}
+
+/* Image */
+.image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.image figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* Table */
+.table table {
+  width: 100
+    </style>
+  <!-- Header -->
+  <header class="header">
+    <h1>🚀 Company Logo</h1>
+    <nav>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- Section 1: Intro -->
+  <section class="intro">
+    <h2>Welcome</h2>
+    <p>This is a simple webpage created as part of the HTML milestone project. It demonstrates headings, paragraphs, lists, multimedia, tables, and forms.</p>
+    <p><strong>Call us</strong> | <a href="#contact">Contact us</a></p>
+  </section>
+
+  <hr>
+
+  <!-- Section 2: Video -->
+  <section class="video">
+    <h2>Featured Video</h2>
+    <video src="sample-video.mp4" autoplay muted loop controls></video>
+    <p>Watch this clip showcasing our creative work.</p>
+  </section>
+
+  <hr>
+
+  <!-- Section 3: Image -->
+  <section class="image">
+    <h2>Image Showcase</h2>
+    <figure>
+      <img src="sample-image.jpg" alt="Office teamwork">
+      <figcaption>Our team collaborating on innovative projects.</figcaption>
+    </figure>
+  </section>
+
+  <hr>
+
+  <!-- Section 4: Table -->
+  <section class="table">
+    <h2>Planetary Facts</h2>
+    <table>
+      <caption>Data about the planets of our solar system (Planetary facts taken from NASA)</caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Mass (10^24kg)</th>
+          <th scope="col">Diameter (km)</th>
+          <th scope="col">Density (kg/m3)</th>
+          <th scope="col">Gravity (m/s2)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Mercury</th><td>0.330</td><td>4,878</td><td>5427</td><td>3.7</td></tr>
+        <tr><th scope="row">Venus</th><td>4.87</td><td>12,104</td><td>5243</td><td>8.9</td></tr>
+        <tr><th scope="row">Earth</th><td>5.97</td><td>12,756</td><td>5514</td><td>9.8</td></tr>
+        <tr><th scope="row">Mars</th><td>0.642</td><td>6,792</td><td>3933</td><td>3.7</td></tr>
+        <tr><th scope="row">Jupiter</th><td>1898</td><td>142,984</td><td>1326</td><td>23.1</td></tr>
+        <tr><th scope="row">Saturn</th><td>568</td><td>120,536</td><td>687</td><td>9.0</td></tr>
+        <tr><th scope="row">Uranus</th><td>86.8</td><td>51,118</td><td>1271</td><td>8.7</td></tr>
+        <tr><th scope="row">Neptune</th><td>102</td><td>49,528</td><td>1638</td><td>11.0</td></tr>
+        <tr><th scope="row">Pluto</th><td>0.0146</td><td>2,370</td><td>2095</td><td>0.7</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- Section 5: Form -->
+  <section id="contact" class="form">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="fullname">Full Name*</label>
+      <input type="text" id="fullname" name="fullname" minlength="10" maxlength="20" required><br><br>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="city">City*</label>
+      <select id="city" name="city" required>
+        <option value="">--Select City--</option>
+        <option>Festac</option>
+        <option>Surulere</option>
+        <option>Ikeja</option>
+        <option>Yaba</option>
+        <option>Ikoyi</option>
+        <option>Victoria Island</option>
+        <option>Ajah</option>
+        <option>Maryland</option>
+        <option>Magodo</option>
+        <option>Lekki</option>
+      </select><br><br>
+
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" maxlength="11" required><br><br>
+
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" maxlength="100" required></textarea><br><br>
+
+      <p>How should we contact you?</p>
+      <input type="radio" id="phoneContact" name="contactMethod" value="Phone" required>
+      <label for="phoneContact">Phone</label>
+      <input type="radio" id="emailContact" name="contactMethod" value="Email">
+      <label for="emailContact">Email</label>
+      <input type="radio" id="bothContact" name="contactMethod" value="Both">
+      <label for="bothContact">Both</label><br><br>
+
+      <p>How did you hear about us?</p>
+      <input type="checkbox" id="friend" name="source" value="Friend">
+      <label for="friend">Friend</label>
+      <input type="checkbox" id="tsacademy" name="source" value="TS Academy">
+      <label for="tsacademy">TS Academy</label>
+      <input type="checkbox" id="others" name="source" value="Others">
+      <label for="others">Others</label><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">Featured</a></li>
+      <li><a href="#">Partnership</a></li>
+      <li><a href="#">Business Relation</a></li>
+    </ul>
+    <p>&copy;2022 Company Name. All rights reserved</p>
+    <ul>
+      <li><a href="#">Privacy & Policy</a></li>
+      <li><a href="#">Terms & Condition</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
