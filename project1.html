@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Company Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Milestone Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #000;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+    }
+
+    
+    .options {
+      display: flex;
+      gap: 20px;   /* space between each option */
+      margin-top: 5px;
+    }
+
+    .options label {
+      display: flex;
+      align-items: center;
+      gap: 5px;    /* space between the input and text */
+    }
+
+    
+
+    form button {
+      background: #C0C0C0;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 15px;
+      cursor: pointer;
+      display: block;        /* makes the button take up its own line */
+      margin-left: auto;     /* pushes it away from the left */
+      margin-right: auto;    /* pushes it away from the right */
+}
+    
+
+    form button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f2f2f2;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>🚀 TechWorld Solutions</h1>
+    <nav>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- Section 1: Intro -->
+  <section class="intro">
+    <h2>Innovating for a Better Tomorrow</h2>
+    <p>At TechWorld Solutions, we specialize in creating digital products that empower businesses and individuals. Our mission is to deliver reliable, scalable, and user-friendly solutions that make everyday tasks easier and more efficient.</p>
+    <p><strong>Call us today</strong> | <a href="#contact">Contact us</a></p>
+  </section>
+
+  <hr>
+
+  <!-- Section 2: Video -->
+  <section class="video">
+    <h2>Featured Video</h2>
+    <video src="sample-video.mp4" autoplay muted loop controls></video>
+    <p>Discover how our innovative platforms are transforming industries worldwide.</p>
+  </section>
+
+  <hr>
+
+  <!-- Section 3: Image -->
+  <section class="image">
+    <h2>Our Team in Action</h2>
+    <figure>
+      <img src="sample-image.jpg" alt="Team collaboration">
+      <figcaption>Dedicated professionals working together to build impactful solutions.</figcaption>
+    </figure>
+  </section>
+
+  <hr>
+
+  <!-- Section 4: Table -->
+  <section class="table">
+    <h2>Planetary Facts</h2>
+    <table>
+      <caption>Data about the planets of our solar system (Planetary facts taken from NASA)</caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Mass (10^24kg)</th>
+          <th scope="col">Diameter (km)</th>
+          <th scope="col">Density (kg/m3)</th>
+          <th scope="col">Gravity (m/s2)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Mercury</th><td>0.330</td><td>4,878</td><td>5427</td><td>3.7</td></tr>
+        <tr><th scope="row">Venus</th><td>4.87</td><td>12,104</td><td>5243</td><td>8.9</td></tr>
+        <tr><th scope="row">Earth</th><td>5.97</td><td>12,756</td><td>5514</td><td>9.8</td></tr>
+        <tr><th scope="row">Mars</th><td>0.642</td><td>6,792</td><td>3933</td><td>3.7</td></tr>
+        <tr><th scope="row">Jupiter</th><td>1898</td><td>142,984</td><td>1326</td><td>23.1</td></tr>
+        <tr><th scope="row">Saturn</th><td>568</td><td>120,536</td><td>687</td><td>9.0</td></tr>
+        <tr><th scope="row">Uranus</th><td>86.8</td><td>51,118</td><td>1271</td><td>8.7</td></tr>
+        <tr><th scope="row">Neptune</th><td>102</td><td>49,528</td><td>1638</td><td>11.0</td></tr>
+        <tr><th scope="row">Pluto</th><td>0.0146</td><td>2,370</td><td>2095</td><td>0.7</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- Section 5: Form -->
+  <section id="contact" class="form">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="fullname">Full Name*</label>
+      <input type="text" id="fullname" name="fullname" minlength="10" maxlength="20" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="city">City*</label>
+      <select id="city" name="city" required>
+        <option value="">--Select City--</option>
+        <option>Festac</option>
+        <option>Surulere</option>
+        <option>Ikeja</option>
+        <option>Yaba</option>
+        <option>Ikoyi</option>
+        <option>Victoria Island</option>
+        <option>Ajah</option>
+        <option>Maryland</option>
+        <option>Magodo</option>
+        <option>Lekki</option>
+      </select> 
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" maxlength="11" required>
+
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" maxlength="100" required></textarea>
+
+      <div class="contact-method">
+  <div>
+    <p>How should we contact you?</p>
+    <div class="options">
+      <label><input type="radio" id="phoneContact" name="contactMethod" value="Phone" required> Phone</label>
+      <label><input type="radio" id="emailContact" name="contactMethod" value="Email"> Email</label>
+      <label><input type="radio" id="bothContact" name="contactMethod" value="Both"> Both</label>
+    </div>
+  </div>
+  <br>
+  <div class="source">
+    <p>How did you hear about us?</p>
+    <div class="options">
+      <label><input type="checkbox" id="friend" name="source" value="Friend"> Friend</label>
+      <label><input type="checkbox" id="academy" name="source" value="Academy"> Academy</label>
+      <label><input type="checkbox" id="others" name="source" value="Others"> Others</label>
+    </div>
+  </div>
+</div>
+
+      
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">Featured</a></li>
+      <li><a href="#">Partnership</a></li>
+      <li><a href="#">Business Relation</a></li>
+    </ul>
+    <p>&copy;2026 TechWorld Solutions. All rights reserved</p>
+    <ul>
+      <li><a href="#">Privacy & Policy</a></li>
+      <li><a href="#">Terms & Condition</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
